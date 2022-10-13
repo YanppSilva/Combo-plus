@@ -94,3 +94,36 @@ body {
 .descricao__texto {
 	color: var(--cinza-sencundario);
 }
+
+.secundario__btn {
+	display: inline-block;
+	margin-top: 1em; 
+}
+
+.container__descricao {
+	padding: 2em;
+}
+
+.dispositivos__titulo {
+	font-size: 48px;
+	color: var(--branco-principal);
+
+}
+
+.dispositivos__lista {
+	display: flex;
+	font-size: 32px;
+	justify-content: center;
+	list-style-type: none;
+	margin: 3.5em 0;
+}
+
+.dispositivos {
+	text-align: center;
+}
+
+.lista__item {
+	color: var(--branco-principal);
+	font-weight: 700;
+	font-size: 32px;
+}
