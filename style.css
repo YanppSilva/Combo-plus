@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--branco-principal: #FFFFFF;
+	--cinza-sencundario: #C0C0C0;
+	--btn-azul: #167BF7;
+	--cor-de-fundo: #00030C;
+}
+
+body {
+	background-color: var(--cor-de-fundo);
+	font-family: 'Inter', sans-serif;
+}
+
+.container {
+	height: 100vh;
+	background: url(assets/img/Background.png) no-repeat;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
