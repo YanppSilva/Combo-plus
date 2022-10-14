@@ -9,6 +9,8 @@
 	--branco-principal: #FFFFFF;
 	--cinza-sencundario: #C0C0C0;
 	--btn-azul: #167BF7;
+	--btn-efeito: #3c92fa;
+	--btn-efeito-vermelho: #c91515cf;
 	--cor-de-fundo: #00030C;
 }
 
@@ -54,9 +56,20 @@ body {
 	margin-bottom: 1em;
 }
 
+.container__btn:hover {
+	background-color: var(--btn-efeito);
+	color: var(--cor-de-fundo);
+}
+
 .btn-2 {
 	background-color: transparent;
 	border: 2px solid var(--branco-principal);
+}
+
+.btn-2:hover {
+	border: 2px solid var(--btn-efeito-vermelho);
+	color: var(--btn-efeito-vermelho);
+	background-color: var(--branco-principal);
 }
 
 .container__aviso {
@@ -126,4 +139,53 @@ body {
 	color: var(--branco-principal);
 	font-weight: 700;
 	font-size: 32px;
+}
+
+.rodape {
+	text-align: center;
+	margin: 5em 3em;
+}
+
+.rodape__logo {
+	margin-bottom: 41px;
+}
+
+.rodape__lista {
+	display: flex;
+	font-weight: 400;
+	gap: 16px;
+	justify-content: center;
+	line-height: 24px;
+}
+
+.rodape__lista a {
+	text-decoration: none;
+	color: var(--branco-principal);
+}
+
+.rodape__texto {
+	color: var(--cinza-sencundario);
+	font-size: 14px;
+	margin: 24px 0;
+}
+
+.rodape__link a:hover{
+	color: var(--btn-azul);
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/* border-radius: 10px; */
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
